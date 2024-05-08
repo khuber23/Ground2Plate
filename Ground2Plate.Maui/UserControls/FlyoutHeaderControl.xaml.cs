@@ -7,8 +7,7 @@ public partial class FlyoutHeaderControl : ContentView
 		InitializeComponent();
         if (App.user != null)
         {
-            lblUserName.Text = "Logged in as: " + App.user.Name;
-            lblUserEmail.Text = App.user.Email;
+            lblUserName.Text = "Welcome " + App.user.Name;
         }
 
     }

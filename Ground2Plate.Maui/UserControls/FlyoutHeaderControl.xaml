@@ -4,8 +4,8 @@
              x:Class="Ground2Plate.Maui.UserControls.FlyoutHeaderControl">
     
     <StackLayout Padding="10">
-        <Label x:Name="lblUserName" FontSize="20" FontAttributes="Bold" TextColor="Black"/>
-        <Label x:Name="lblUserEmail" FontSize="16" TextColor="Green"/>
+        <Image Source="logo_nobg.png" WidthRequest="200" />
+        <Label x:Name="lblUserName" HorizontalTextAlignment="Center" FontSize="15" FontAttributes="Bold" TextColor="Black"/>
     </StackLayout>
 
 </ContentView>
