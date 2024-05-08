@@ -1,11 +1,10 @@
-﻿using System.Text.Json.Serialization;
-using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using Ground2Plate.Maui.Services;
 using Ground2Plate.Maui.UserControls;
-using Ground2Plate.Maui.Views;
+using Ground2Plate.Maui.Pages;
 using Ground2Plate.Models;
 using Newtonsoft.Json;
+using Ground2Plate.Maui.Services.Login;
 
 namespace Ground2Plate.Maui.ViewModels
 {
@@ -17,7 +16,7 @@ namespace Ground2Plate.Maui.ViewModels
         [ObservableProperty]
         private string? _password;
 
-        private readonly ILoginRepository _loginService = new LoginService();
+        private readonly ILoginService _loginService = new LoginService();
 
         [RelayCommand]
         public async Task Login()

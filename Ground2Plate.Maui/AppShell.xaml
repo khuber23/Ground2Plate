@@ -4,12 +4,26 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Ground2Plate.Maui"
-    Shell.FlyoutBehavior="Disabled"
+    xmlns:pages="clr-namespace:Ground2Plate.Maui.Pages"
+    Shell.TabBarIsVisible="False"
     Title="Ground2Plate.Maui">
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        ContentTemplate="{DataTemplate local:LoginPage}"
+        Route="LoginPage" 
+        Shell.FlyoutBehavior="Disabled"/>
+
+    <FlyoutItem Route="HomePage" FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="Home" ContentTemplate="{DataTemplate pages:HomePage}"/>
+        <ShellContent Title="About" ContentTemplate="{DataTemplate pages:AboutPage}"/>
+        <ShellContent Title="Contact" ContentTemplate="{DataTemplate pages:ContactPage}"/>
+    </FlyoutItem>
+
+    <Shell.FlyoutFooter>
+        <StackLayout Padding="20">
+            <Button Text="Sign Out" Command="{Binding SignOutCommand}" BackgroundColor="IndianRed" TextColor="White"/>
+        </StackLayout>
+    </Shell.FlyoutFooter>
 
 </Shell>
