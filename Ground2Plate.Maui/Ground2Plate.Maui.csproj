@@ -65,15 +65,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Pages\" />
-	  <Folder Include="Views\" />
-	  <Folder Include="ViewModels\" />
 	  <Folder Include="UserControls\" />
 	  <Folder Include="Services\" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <ProjectReference Include="..\Ground2Plate.Models\Ground2Plate.Models.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Pages\LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
