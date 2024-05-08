@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodel="clr-namespace:Ground2Plate.Maui.ViewModels"
              x:DataType="viewmodel:LoginPageViewModel"
-             x:Class="Ground2Plate.Maui.LoginPage"
+             x:Class="Ground2Plate.Maui.Pages.LoginPage"
              Title="LoginPage">
 
     <VerticalStackLayout>

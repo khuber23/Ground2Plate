@@ -10,7 +10,7 @@
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:LoginPage}"
+        ContentTemplate="{DataTemplate pages:LoginPage}"
         Route="LoginPage" 
         Shell.FlyoutBehavior="Disabled"/>
 
