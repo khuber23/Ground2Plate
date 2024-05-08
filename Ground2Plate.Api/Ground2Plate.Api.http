@@ -4,3 +4,14 @@ GET {{Ground2Plate.Api_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+
+POST {{Ground2Plate.Api_HostAddress}}/api/user
+Content-Type: application/json
+
+{
+  "name": "Admin",
+  "email": "Admin@gmail.com",
+  "password": "Admin123"
+}
+
+###
