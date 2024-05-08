@@ -11,7 +11,7 @@ namespace Ground2Plate.Maui.Services.Login
             {
                 _ = new User();
                 var client = new HttpClient();
-                string url = "https://localhost:7251/api/User/login/" + email + "/" + password;
+                string url = "https://localhost:7045/api/User/login/" + email + "/" + password;
                 client.BaseAddress = new Uri(url);
                 HttpResponseMessage response = await client.GetAsync(client.BaseAddress);
                 if (response.IsSuccessStatusCode)
