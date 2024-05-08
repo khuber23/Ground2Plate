@@ -57,9 +57,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\icon_home.png" />
 	  <None Remove="Resources\Images\icon_lock.png" />
 	  <None Remove="Resources\Images\icon_user.png" />
 	  <None Remove="Resources\Images\icon_user_key.png" />
+	  <None Remove="Resources\Images\Logo.png" />
+	  <None Remove="Resources\Images\logo_nobg.png" />
 	</ItemGroup>
 
 	<ItemGroup>

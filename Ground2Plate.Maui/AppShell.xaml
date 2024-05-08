@@ -5,6 +5,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Ground2Plate.Maui"
     xmlns:pages="clr-namespace:Ground2Plate.Maui.Pages"
+    xmlns:viewmodel="clr-namespace:Ground2Plate.Maui.ViewModels"
+    x:DataType="viewmodel:AppShellViewModel"
     Shell.TabBarIsVisible="False"
     Title="Ground2Plate.Maui">
 
@@ -12,10 +14,12 @@
         Title="Home"
         ContentTemplate="{DataTemplate pages:LoginPage}"
         Route="LoginPage" 
+        FlyoutItemIsVisible="False"
         Shell.FlyoutBehavior="Disabled"/>
 
+    <!--Side Bar-->
     <FlyoutItem Route="HomePage" FlyoutDisplayOptions="AsMultipleItems">
-        <ShellContent Title="Home" ContentTemplate="{DataTemplate pages:HomePage}"/>
+        <ShellContent Icon="icon_home.png" Title="Home" ContentTemplate="{DataTemplate pages:HomePage}"/>
         <ShellContent Title="About" ContentTemplate="{DataTemplate pages:AboutPage}"/>
         <ShellContent Title="Contact" ContentTemplate="{DataTemplate pages:ContactPage}"/>
     </FlyoutItem>
