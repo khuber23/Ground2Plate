@@ -21,7 +21,7 @@ namespace Ground2Plate.Maui
 
         public static void Initialize()
         {
-            var selectedTheme = Preferences.Default.Get<string>(ThemeKey, null);
+            var selectedTheme = Preferences.Default.Get<string>(ThemeKey, null!);
             if(selectedTheme is null && Application.Current!.PlatformAppTheme == AppTheme.Dark)
             {
                 selectedTheme = nameof(Themes.Dark);
@@ -29,7 +29,7 @@ namespace Ground2Plate.Maui
             SetTheme(selectedTheme ?? nameof(Themes.Default));
         }
 
-        public static event EventHandler SelectedThemeChanged;
+        public static event EventHandler? SelectedThemeChanged;
 
         public static string[] ThemeNames => _themesMap.Keys.ToArray();
 
