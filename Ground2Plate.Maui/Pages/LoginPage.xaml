@@ -7,17 +7,22 @@
              Title="LoginPage">
 
     <VerticalStackLayout>
-        <!--This is the logo on top-->
-        <Frame CornerRadius="50" WidthRequest="120" HeightRequest="120" Margin="0,20,0,0" Padding="0" BorderColor="ForestGreen">
-            <Image Source="icon_user_key.png" WidthRequest="80" HeightRequest="80" VerticalOptions="Center" HorizontalOptions="Center"/>
-        </Frame>
-        <!--This is text for sign in-->
+
+        <VerticalStackLayout>
+            <Label Text="{Binding SelectedTheme, StringFormat='Selected Theme: {0}'}"/>
+            <Button Text="Change Theme" Command="{Binding ChangeThemeCommand}" HorizontalOptions="End"/>
+        </VerticalStackLayout>
+        <!--This is text for sign in w/ logo on top-->
         <StackLayout Orientation="Vertical" Spacing="10" Margin="0,25,0,0">
-            <Label Text="Welcome" FontAttributes="Bold" FontSize="Large" TextColor="ForestGreen" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-            <Label Text="Sign in to Continue" TextColor="Green" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Image Source="logo_default.png" WidthRequest="270" HeightRequest="210" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label Text="Welcome" FontFamily="PTSerifCaption" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Label Text="Sign in to Continue" FontFamily="PTSerifCaption" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
         </StackLayout>
+        <!--This is the user logo-->
+            <Image Margin="0,20,0,0" Source="icon_user_key.png" WidthRequest="60" HeightRequest="60" VerticalOptions="Center" HorizontalOptions="Center"/>
+        
         <!--This grid for email and password w/ their images-->
-        <Grid RowDefinitions="*,*,*" Margin="0,50,0,0" Padding="10" RowSpacing="10" HorizontalOptions="Center">
+        <Grid RowDefinitions="*,*,*" Margin="0,15,0,0" Padding="10" RowSpacing="10" HorizontalOptions="Center">
             <!--This is email-->
             <StackLayout Orientation="Horizontal">
                 <Image Source="icon_user.png" WidthRequest="30" HeightRequest="30"/>
@@ -37,11 +42,11 @@
         </Grid>
 
         <!--This is sign in button-->
-        <Button Command="{Binding LoginCommand}" FontAttributes="Bold" Text="Sign in" CornerRadius="10" FontSize="20" VerticalOptions="Center" Margin="30,0,30,0"/>
+        <Button Command="{Binding LoginCommand}" BackgroundColor="{DynamicResource Button}" FontAttributes="Bold" Text="Sign in" CornerRadius="10" FontSize="20" VerticalOptions="Center" Margin="30,0,30,0"/>
         <!--This is new user? Sign up-->
         <StackLayout Margin="0,35,0,0" Orientation="Horizontal" HorizontalOptions="Center">
-            <Label Text="New User?" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Blue" FontSize="Small"/>
-            <Button Text="Sign Up" FontSize="Small" TextColor="ForestGreen" FontAttributes="Bold" BorderWidth="0" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Transparent"/>
+            <Label Text="New User?" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black" FontSize="Small"/>
+            <Button Text="Sign Up" FontSize="Small" TextColor="Blue" FontAttributes="Bold" BorderWidth="0" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Transparent"/>
         </StackLayout>
     </VerticalStackLayout>
 

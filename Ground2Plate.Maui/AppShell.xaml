@@ -7,8 +7,7 @@
     xmlns:pages="clr-namespace:Ground2Plate.Maui.Pages"
     xmlns:viewmodel="clr-namespace:Ground2Plate.Maui.ViewModels"
     x:DataType="viewmodel:AppShellViewModel"
-    Shell.TabBarIsVisible="False"
-    Title="Ground2Plate.Maui">
+    Shell.TabBarIsVisible="False">
 
     <ShellContent
         Title="Home"

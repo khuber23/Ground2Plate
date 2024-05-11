@@ -18,6 +18,19 @@ namespace Ground2Plate.Maui.ViewModels
 
         private readonly ILoginService _loginService = new LoginService();
 
+        private string _selectedTheme = ThemeManager.SelectedTheme;
+        public string SelectedTheme { 
+            get => _selectedTheme;  
+            set
+            {
+                if(value != _selectedTheme)
+                {
+                    _selectedTheme = value;
+                    OnPropertyChanged(nameof(SelectedTheme));   
+                }
+            }
+        }
+
         [RelayCommand]
         public async Task Login()
         {
@@ -61,6 +74,21 @@ namespace Ground2Plate.Maui.ViewModels
                 await Shell.Current.DisplayAlert("Error", ex.Message, "Ok");
                 return;
             }
+        }
+
+        [RelayCommand]
+        public async Task ChangeTheme()
+        {
+             var newTheme = await Shell.Current.DisplayActionSheet("Choose Theme", "Cancel", null, ThemeManager.ThemeNames);
+            if(!string.IsNullOrEmpty(newTheme) && newTheme != "Cancel")
+            {
+                ThemeManager.SetTheme(newTheme);
+            }
+        }
+
+        public void ThemeManager_SelectedThemeChanged(object sender, EventArgs e)
+        {
+            SelectedTheme = ThemeManager.SelectedTheme;
         }
     }
 }

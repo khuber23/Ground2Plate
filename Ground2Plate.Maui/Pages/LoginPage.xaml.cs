@@ -6,7 +6,9 @@ public partial class LoginPage : ContentPage
 {
 	public LoginPage(LoginPageViewModel vm)
 	{
-		InitializeComponent();
+        InitializeComponent();
 		BindingContext = vm;
-	}
+		ThemeManager.SelectedThemeChanged += vm.ThemeManager_SelectedThemeChanged!;
+
+    }
 }

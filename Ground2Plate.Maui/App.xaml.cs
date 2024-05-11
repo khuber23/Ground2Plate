@@ -1,4 +1,5 @@
-﻿using Ground2Plate.Models;
+﻿using Ground2Plate.Maui.Resources.Themes;
+using Ground2Plate.Models;
 
 namespace Ground2Plate.Maui
 {
@@ -10,6 +11,12 @@ namespace Ground2Plate.Maui
             InitializeComponent();
 
             MainPage = new AppShell();
+        }
+
+        protected override void OnStart()
+        {
+            base.OnStart();
+            ThemeManager.Initialize();
         }
     }
 }

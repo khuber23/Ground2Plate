@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ground2Plate.Maui.Resources.Themes.Default">
+
+    <Color x:Key="Button">#487E57</Color>
+    <Color x:Key="PageBg">#DCE3D2</Color>
+    <Color x:Key="LabelColor">#487E57</Color>
+
+
+    <!--Custom Colors-->
+    <!--<Color x:Key="Default_Bg">#DCE3D2</Color>
+    <Color x:Key="Default_Button">#487E57</Color>
+    <Color x:Key="Light_ButtonText">#F5F8EF</Color>
+    <Color x:Key="Brown">#895E40</Color>
+    <Color x:Key="LightGreen">#A4D27F</Color>-->
+
+
+    <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource Primary}"/>
+    <SolidColorBrush x:Key="SecondaryBrush" Color="{StaticResource Secondary}"/>
+    <SolidColorBrush x:Key="TertiaryBrush" Color="{StaticResource Tertiary}"/>
+
+</ResourceDictionary>
