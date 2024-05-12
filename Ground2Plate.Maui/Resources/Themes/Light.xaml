@@ -2,8 +2,8 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Ground2Plate.Maui.Resources.Themes.Light">
-
-    <Color x:Key="Button">#A4D27F</Color>
+  
+    <Color x:Key="Button">#487E57</Color>
     <Color x:Key="PageBg">#DCE3D2</Color>
     <Color x:Key="LabelColor">#487E57</Color>
 
