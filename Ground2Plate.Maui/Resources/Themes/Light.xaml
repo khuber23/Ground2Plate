@@ -4,7 +4,7 @@
              x:Class="Ground2Plate.Maui.Resources.Themes.Light">
 
     <Color x:Key="Button">#A4D27F</Color>
-    <Color x:Key="PageBg">#F5F8EF</Color>
+    <Color x:Key="PageBg">#DCE3D2</Color>
     <Color x:Key="LabelColor">#487E57</Color>
 
     <!--Custom Colors-->

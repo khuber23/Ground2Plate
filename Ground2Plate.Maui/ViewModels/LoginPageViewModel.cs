@@ -8,7 +8,7 @@ using Ground2Plate.Maui.Services.Login;
 
 namespace Ground2Plate.Maui.ViewModels
 {
-    public partial class LoginPageViewModel : ObservableObject
+    public partial class LoginPageViewModel : BaseViewModel
     {
         [ObservableProperty]
         private string? _email;
@@ -16,7 +16,12 @@ namespace Ground2Plate.Maui.ViewModels
         [ObservableProperty]
         private string? _password;
 
-        private readonly ILoginService _loginService = new LoginService();
+        private readonly ILoginService _loginService;
+
+        public LoginPageViewModel(ILoginService loginService)
+        {
+            _loginService = loginService;
+        }
 
         private string _selectedTheme = ThemeManager.SelectedTheme;
         public string SelectedTheme { 

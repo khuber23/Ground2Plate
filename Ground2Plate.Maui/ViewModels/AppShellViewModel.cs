@@ -3,7 +3,7 @@ using CommunityToolkit.Mvvm.Input;
 
 namespace Ground2Plate.Maui.ViewModels
 {
-    public partial class AppShellViewModel : ObservableObject
+    public partial class AppShellViewModel : BaseViewModel
     {
         [RelayCommand]
         async Task SignOut()

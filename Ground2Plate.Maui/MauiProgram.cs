@@ -1,4 +1,5 @@
-﻿using Ground2Plate.Maui.Pages;
+﻿using Ground2Plate.Maui.Custom;
+using Ground2Plate.Maui.Pages;
 using Ground2Plate.Maui.ViewModels;
 using Microsoft.Extensions.Logging;
 
@@ -18,12 +19,9 @@ namespace Ground2Plate.Maui
                     fonts.AddFont("PTSerifCaption-Regular.ttf", "PTSerifCaption");
                 });
 
-            builder.Services.AddSingleton<HomePage>();
-            builder.Services.AddSingleton<LoginPage>();
-            builder.Services.AddSingleton<AboutPage>();
-            builder.Services.AddSingleton<ContactPage>();
-
-            builder.Services.AddSingleton<LoginPageViewModel>();
+            builder.RegisterViewModels();
+            builder.RegisterPages();
+            builder.RegisterServices();
 
 #if DEBUG
             builder.Logging.AddDebug();
