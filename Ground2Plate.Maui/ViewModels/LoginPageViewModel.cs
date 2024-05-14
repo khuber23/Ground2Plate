@@ -22,7 +22,7 @@ namespace Ground2Plate.Maui.ViewModels
         {
             _loginService = loginService;
         }
-
+   
         private string _selectedTheme = ThemeManager.SelectedTheme;
         public string SelectedTheme { 
             get => _selectedTheme;  

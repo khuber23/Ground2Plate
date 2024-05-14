@@ -1,5 +1,4 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
-using CommunityToolkit.Mvvm.Input;
+﻿using CommunityToolkit.Mvvm.Input;
 
 namespace Ground2Plate.Maui.ViewModels
 {
@@ -12,7 +11,7 @@ namespace Ground2Plate.Maui.ViewModels
             {
                 Preferences.Remove(nameof(App.user));
             }
-            await Shell.Current.GoToAsync("..");
+            await Shell.Current.GoToAsync("//LoginPage");
         }
     }
 }

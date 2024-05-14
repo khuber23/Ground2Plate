@@ -9,6 +9,5 @@ public partial class LoginPage : ContentPage
         InitializeComponent();
 		BindingContext = vm;
 		ThemeManager.SelectedThemeChanged += vm.ThemeManager_SelectedThemeChanged!;
-
     }
 }
