@@ -25,8 +25,8 @@
 
     <Style TargetType="Button">
         <Setter Property="TextColor" Value="{DynamicResource Black}" />
-        <Setter Property="BackgroundColor" Value="{DynamicResource Button}" />
-        <Setter Property="FontFamily" Value="OpenSansRegular"/>
+        <Setter Property="BackgroundColor" Value="{DynamicResource ButtonBg}" />
+        <Setter Property="FontFamily" Value="PTSerifCaption"/>
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="BorderWidth" Value="0"/>
         <Setter Property="CornerRadius" Value="15"/>
@@ -50,7 +50,6 @@
     </Style>
 
     <Style TargetType="CheckBox">
-        <Setter Property="Color" Value="{DynamicResource White}" />
         <Setter Property="MinimumHeightRequest" Value="44"/>
         <Setter Property="MinimumWidthRequest" Value="44"/>
         <Setter Property="VisualStateManager.VisualStateGroups">
@@ -111,9 +110,9 @@
     </Style>-->
 
     <Style TargetType="Entry">
-        <Setter Property="TextColor" Value="{DynamicResource LabelColor}" />
-        <Setter Property="BackgroundColor" Value="Transparent" />
-        <Setter Property="FontFamily" Value="OpenSansRegular"/>
+        <Setter Property="TextColor" Value="{DynamicResource Black}" />
+        <Setter Property="BackgroundColor" Value="#F5F8EF" />
+        <Setter Property="FontFamily" Value="PTSerifCaption"/>
         <Setter Property="FontSize" Value="14" />
         <Setter Property="PlaceholderColor" Value="{StaticResource Gray300}" />
         <Setter Property="MinimumHeightRequest" Value="44"/>
@@ -163,7 +162,7 @@
     <Style TargetType="Label">
         <Setter Property="TextColor" Value="{DynamicResource LabelColor}" />
         <Setter Property="BackgroundColor" Value="Transparent" />
-        <Setter Property="FontFamily" Value="OpenSansRegular" />
+        <Setter Property="FontFamily" Value="PTSerifCaption" />
         <Setter Property="FontSize" Value="14" />
         <Setter Property="VisualStateManager.VisualStateGroups">
             <VisualStateGroupList>
@@ -171,7 +170,7 @@
                     <VisualState x:Name="Normal" />
                     <VisualState x:Name="Disabled">
                         <VisualState.Setters>
-                            <Setter Property="TextColor" Value="{DynamicResource LabelColor}" />
+                            <Setter Property="TextColor" Value="{DynamicResource Gray600}" />
                         </VisualState.Setters>
                     </VisualState>
                 </VisualStateGroup>

@@ -3,9 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Ground2Plate.Maui.Resources.Themes.Default">
 
-    <Color x:Key="Button">#A4D27F</Color>
-    <Color x:Key="PageBg">#F5F8EF</Color>
+    <Color x:Key="ButtonBg">#487E57</Color>
+    <Color x:Key="PageBg">#DCE3D2</Color>
     <Color x:Key="LabelColor">#487E57</Color>
+
+    <!--Default light mode-->
+    <!--<Color x:Key="ButtonBg">#487E57</Color>
+    <Color x:Key="PageBg">#DCE3D2</Color>
+    <Color x:Key="LabelColor">#487E57</Color>-->
 
 
     <!--Custom Colors-->
@@ -15,9 +20,5 @@
     <Color x:Key="Brown">#895E40</Color>
     <Color x:Key="LightGreen">#A4D27F</Color>-->
 
-
-    <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource Primary}"/>
-    <SolidColorBrush x:Key="SecondaryBrush" Color="{StaticResource Secondary}"/>
-    <SolidColorBrush x:Key="TertiaryBrush" Color="{StaticResource Tertiary}"/>
 
 </ResourceDictionary>

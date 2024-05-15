@@ -11,7 +11,6 @@ namespace Ground2Plate.Maui
         {
             [nameof(Themes.Default)] = new Themes.Default(),
             [nameof(Themes.Dark)] = new Themes.Dark(),
-            [nameof(Themes.Light)] = new Themes.Light(),
         };
 
         static ThemeManager()
